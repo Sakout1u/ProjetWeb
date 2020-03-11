@@ -1,0 +1,19 @@
+<mat-card class="actualites" style="height:230px;">
+  <mat-card-header>
+
+    <div mat-card-avatar style="background-size: cover;">
+     <!-- <img mat-card-image src="../../images/Capture6.PNG" style="width:120%; margin-top:5%; margin-left: 5%;  ">-->
+    </div>
+    <mat-card-title style="color: #7B94FA;">
+      {{actualites.titre}}
+  </mat-card-title>
+
+  </mat-card-header>
+
+  <mat-card-content style="margin-left: 10%;">
+    <div [innerHTML]= "actualites.contenu"></div>
+  </mat-card-content>
+  <mat-card-content style="margin-left: 10%;">
+    Date :  {{actualites.date}}
+  </mat-card-content>
+</mat-card>

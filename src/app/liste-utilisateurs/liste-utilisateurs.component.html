@@ -1,0 +1,21 @@
+
+<mat-card  class="utilisateur" >
+
+  <mat-card-header>
+
+    <div mat-card-avatar style="background-size: cover;">
+      <img mat-card-image src="{{utilisateur.urlPhoto}}" style="width:120%; height:120%;">
+    </div>
+    <mat-card-title>
+      {{utilisateur.nom}} {{utilisateur.prenom}}
+    </mat-card-title>
+
+  </mat-card-header>
+    <mat-card-content>
+      Adresse mail: {{utilisateur.mail}}
+    </mat-card-content>
+    <mat-card-content>
+      Role: {{utilisateur.role}}
+    </mat-card-content>
+</mat-card>
+

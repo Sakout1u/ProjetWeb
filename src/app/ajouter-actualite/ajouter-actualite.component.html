@@ -1,0 +1,32 @@
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+  <!--<img src="../../images/.PNG" alt="" style=" margin-left: 30%; width:20%; margin-top:15%; height : 500px;">-->
+  <mat-card style="max-width:18%; margin-left:35%; height:370px; margin-bottom: 10%;margin-right: -50px; margin-top:100px" >
+
+    <mat-card-header>
+      <div style="margin-left:3%;"><h2 style="color: #7B94FA;" >Ajouter une actualité</h2> </div>
+
+    </mat-card-header>
+    <mat-card-content>
+        <mat-form-field class="example-full-width" style="width:100%;">
+          <input matInput type="text" formControlName="titre" placeholder="Titre de l'article" required >
+
+        </mat-form-field>
+        <br>
+
+        <mat-form-field class="example-full-width" style="width:100%;">
+          <textarea matInput  type="text" formControlName="contenu" placeholder="Contenu" required></textarea>
+        </mat-form-field>
+        <br>
+
+        <mat-form-field class="example-full-width" style="width:100%;">
+          <input matInput  type="text" formControlName="date" placeholder="Date" required>
+        </mat-form-field>
+        <br>
+
+        <button mat-raised-button style="background-color: #7B94FA; width:35%; margin-left:33%" [disabled]="profileForm.invalid" type="submit">Créer</button>
+
+
+    </mat-card-content>
+
+  </mat-card>
+  </form>

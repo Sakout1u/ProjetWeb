@@ -1,0 +1,31 @@
+
+<mat-card class="example-card" >
+
+      <mat-card-header style="margin-left:-50px; margin-right:100px; margin-top:-150px;">
+          <mat-card-title>
+            <div style="margin-left: 120px;"><h1 class="txtcenter" style="color: #3b5998; font-size: 30px;" >Login</h1> </div>
+          </mat-card-title>
+        </mat-card-header>
+      <mat-card-content>
+
+      <div style="margin-left: 55px;">
+        <form [formGroup]="loginform" (ngSubmit)="onSubmit()">
+            <div class="form-group" style="width: 150px;">
+                <label for="email">Email</label>
+                <input matInput type="email" formControlName="Email"  style="width: 150px" />
+            </div>
+            <br>
+
+            <div class="form-group" style="width: 150px;">
+              <label for="password">Password</label>
+              <input matInput type="password" formControlName="Password" style="width: 150px" />
+            </div>
+            <br><br>
+
+            <div class="form-group">
+              <button mat-raised-button style="background-color:#3b5998;width:50px; margin-left:45px" [disabled]="loginform.invalid" type="submit">Login</button>
+            </div>
+        </form>
+      </div>
+
+</mat-card-content>
